@@ -1,0 +1,129 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href='style.css' rel='stylesheet' type='text/css'>
+<title>Socialist History Test</title>
+<link rel="icon" type="x-icon" href="icon.png">
+<link rel="shortcut icon" type="x-icon" href="icon.png">
+<meta charset="utf-8">
+</head>
+<body>
+<script type="application/javascript"
+        src="questions.js">
+</script>
+<h1>Socialist History Test</h1>
+<hr>
+<h2 style="text-align:center;" id="question-number">Loading...</h2>
+<p class="question" id="question-text"></p>
+<button class="button stronglyAgree" onclick="next_question( 1.0)">Emphatically Agree</button> <br>
+<button class="button agree" onclick="next_question( 0.5)">Reluctantly Agree</button> <br>
+<button class="button neutral" onclick="next_question( 0.0)">Neutral/Unsure</button> <br>
+<button class="button disagree" onclick="next_question(-0.5)">Tentatively Disagree</button> <br>
+<button class="button stronglyDisagree" onclick="next_question(-1.0)">Fundamentally Disagree</button> <br>
+<button class="small_button" onclick="prev_question()" id="back_button">Back</button>
+<button class="small_button_off" id="back_button_off">Back</button><br>
+
+<!-- JavaScript for the test itself -->
+<script>
+    var max_ussr, max_prol, max_stat, max_econ, max_prty, max_intl, max_coop, max_bols, max_lcom, max_stal, max_impr, max_radc;
+    max_ussr = max_prol = max_stat = max_econ = max_prty = max_intl = max_coop = max_bols = max_lcom = max_stal = max_impr = max_radc = 0;
+    let ussr_array = new Array(questions.length);
+    let prol_array = new Array(questions.length);
+    let stat_array = new Array(questions.length);
+    let econ_array = new Array(questions.length);
+    let prty_array = new Array(questions.length);
+    let intl_array = new Array(questions.length);
+    let coop_array = new Array(questions.length);
+    let bols_array = new Array(questions.length);
+    let lcom_array = new Array(questions.length);
+    let stal_array = new Array(questions.length);
+    let impr_array = new Array(questions.length);
+    let radc_array = new Array(questions.length);
+    var qn = 0; // Question number
+    init_question();
+    for (var i = 0; i < questions.length; i++) {
+        max_ussr += Math.abs(questions[i].effect.ussr)
+        max_prol += Math.abs(questions[i].effect.prol)
+        max_stat += Math.abs(questions[i].effect.stat)
+        max_econ += Math.abs(questions[i].effect.econ)
+        max_prty += Math.abs(questions[i].effect.prty)
+        max_intl += Math.abs(questions[i].effect.intl)
+        max_coop += Math.abs(questions[i].effect.coop)
+        max_bols += Math.abs(questions[i].effect.bols)
+        max_lcom += Math.abs(questions[i].effect.lcom)
+        max_stal += Math.abs(questions[i].effect.stal)
+        max_impr += Math.abs(questions[i].effect.impr)
+        max_radc += Math.abs(questions[i].effect.radc)
+    }
+    function init_question() {
+        document.getElementById("question-text").innerHTML = questions[qn].question;
+        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length);
+        if (qn == 0) {
+            document.getElementById("back_button").style.display = 'none';
+            document.getElementById("back_button_off").style.display = 'block';
+        } else {
+            document.getElementById("back_button").style.display = 'block';
+            document.getElementById("back_button_off").style.display = 'none';
+        }
+
+    }
+
+    function next_question(mult) {
+        ussr_array[qn] = mult*questions[qn].effect.ussr
+        prol_array[qn] = mult*questions[qn].effect.prol
+        stat_array[qn] = mult*questions[qn].effect.stat
+        econ_array[qn] = mult*questions[qn].effect.econ
+        prty_array[qn] = mult*questions[qn].effect.prty
+        intl_array[qn] = mult*questions[qn].effect.intl
+        coop_array[qn] = mult*questions[qn].effect.coop
+        bols_array[qn] = mult*questions[qn].effect.bols
+        lcom_array[qn] = mult*questions[qn].effect.lcom
+        stal_array[qn] = mult*questions[qn].effect.stal
+        impr_array[qn] = mult*questions[qn].effect.impr
+        radc_array[qn] = mult*questions[qn].effect.radc
+        qn++;
+        if (qn < questions.length) {
+            init_question();
+        } else {
+            results();
+        }
+    }
+
+    function prev_question() {
+        if (qn == 0) {
+            return;
+        }
+        qn--;
+        init_question();
+    }
+
+    function calc_score(score,max) {
+        return (100*(max+score)/(2*max)).toFixed(1)
+    }
+
+    function results() {
+        let final_ussr = ussr_array.reduce((a, b) => a + b, 0)
+        let final_prol = prol_array.reduce((a, b) => a + b, 0)
+        let final_stat = stat_array.reduce((a, b) => a + b, 0)
+        let final_econ = econ_array.reduce((a, b) => a + b, 0)
+        let final_prty = prty_array.reduce((a, b) => a + b, 0)
+        let final_intl = intl_array.reduce((a, b) => a + b, 0)
+        let final_coop = coop_array.reduce((a, b) => a + b, 0)
+        let final_bols = bols_array.reduce((a, b) => a + b, 0)
+        let final_lcom = lcom_array.reduce((a, b) => a + b, 0)
+        let final_stal = stal_array.reduce((a, b) => a + b, 0)
+        let final_radc = radc_array.reduce((a, b) => a + b, 0)
+        location.href = `results.html`
+            + `?u=${calc_score(final_ussr,max_ussr)}`
+            + `&p=${calc_score(final_prol,max_prol)}`
+            + `&t=${calc_score(final_stat,max_stat)}`
+            + `&e=${calc_score(final_econ,max_econ)}`
+            + `&y=${calc_score(final_prty,max_prty)}`
+            + `&i=${calc_score(final_intl,max_intl)}`
+            + `&c=${calc_score(final_coop,max_coop)}`
+            + `&b=${calc_score(final_bols,max_bols)}`
+            + `&l=${calc_score(final_lcom,max_lcom)}`
+            + `&s=${calc_score(final_stal,max_stal)}`
+            + `&r=${calc_score(final_radc,max_radc)}`
+    }
+</script>
+</body>
