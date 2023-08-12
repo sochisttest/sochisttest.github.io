@@ -224,7 +224,7 @@ ideologies = [
         }
     },
     {
-        "name": "Communalism (Bookchin)",
+        "name": "Communalism (Bookchin)", //Doesn't really belong here, but no eco category so wtv
         "stats": {
             "prol": 10,
             "stat": 10,

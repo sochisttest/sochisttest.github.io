@@ -970,6 +970,7 @@ questions = [
             "radc": 0,
         }
     },
+    // Draper
     {
         "question": "Stalin had an approach of socialism from above, whereas Trotsky had an approach of socialism from below.",
         "effect": {
@@ -1123,6 +1124,7 @@ questions = [
             "radc": 0,
         }
     },
+    // Humanists & post-Trot anarchists
     {
         "question": "Max Schachtman did not go far enough in his critique of Soviet bureaucratic collectivism. The Leninist Party is suspect, or at least outdated.",
         "effect": {
