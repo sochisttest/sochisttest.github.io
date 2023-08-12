@@ -523,7 +523,7 @@ ideologies = [
             "lcom": 40,
             "stal": 40,
             "ussr": 0,
-            "coop": 60,
+            "coop": 80,
             "radc": 50,
         }
     },

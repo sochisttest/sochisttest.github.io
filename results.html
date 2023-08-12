@@ -6,7 +6,7 @@
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
 <script>
-  version = "v1.2" //Remember to update this before making changes to the test itself!
+  version = "v1.3" //Remember to update this before making changes to the test itself!
 </script>
 </head>
 <script type="application/javascript"
@@ -19,88 +19,90 @@
 
 <h1>Results</h1>
 
+<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
+<p>You can send these results by copying and pasting the URL at the top of the page or using the image below. </p>
+<img src="" id="banner">
+
+<hr>
+
 <h2>Revolutionary Class: <span class="weight-300" id="proletarian-label"></span></h2>
 <div class="axis">
-    <img id="img-proletarian" src="value_images/proletarian.png" height="100pt"/>
+    <img id="img-proletarian" src="value_images/proletarian.png" height="70pt"/>
     <div class="bar proletarian" id="bar-proletarian"><div class="text-wrapper" id="proletarian"></div></div>
     <div class="bar agrarian" id="bar-agrarian"><div class="text-wrapper" id="agrarian"></div></div>
-    <img id="img-agrarian" src="value_images/agrarian.png" height="100pt"/>
+    <img id="img-agrarian" src="value_images/agrarian.png" height="70pt"/>
 </div>
 <h2>Relationship to the State: <span class="weight-300" id="state-dependent-label"></span></h2>
 <div class="axis">
-    <img id="img-state-dependent" src="value_images/state-dependent.png" height="100pt"/>
+    <img id="img-state-dependent" src="value_images/state-dependent.png" height="70pt"/>
     <div class="bar state-dependent" id="bar-state-dependent"><div class="text-wrapper" id="state-dependent"></div></div>
     <div class="bar state-independent" id="bar-state-independent"><div class="text-wrapper" id="state-independent"></div></div>
-    <img id="img-state-independent" src="value_images/state-independent.png" height="100pt"/>
+    <img id="img-state-independent" src="value_images/state-independent.png" height="70pt"/>
 </div>
 <h2>Scope of Activity: <span class="weight-300" id="economistic-label"></span></h2>
 <div class="axis">
-    <img id="img-economistic" src="value_images/economistic.png" height="100pt"/>
+    <img id="img-economistic" src="value_images/economistic.png" height="70pt"/>
     <div class="bar economistic" id="bar-economistic"><div class="text-wrapper" id="economistic"></div></div>
     <div class="bar comprehensive" id="bar-comprehensive"><div class="text-wrapper" id="comprehensive"></div></div>
-    <img id="img-comprehensive" src="value_images/comprehensive.png" height="100pt"/>
+    <img id="img-comprehensive" src="value_images/comprehensive.png" height="70pt"/>
 </div>
 <h2>Style of Organization: <span class="weight-300" id="pro-party-label"></span></h2>
 <div class="axis">
-    <img id="img-pro-party" src="value_images/pro-party.png" height="100pt"/>
+    <img id="img-pro-party" src="value_images/pro-party.png" height="70pt"/>
     <div class="bar pro-party" id="bar-pro-party"><div class="text-wrapper" id="pro-party"></div></div>
     <div class="bar anti-party" id="bar-anti-party"><div class="text-wrapper" id="anti-party"></div></div>
-    <img id="img-anti-party" src="value_images/anti-party.png" height="100pt"/>
+    <img id="img-anti-party" src="value_images/anti-party.png" height="70pt"/>
 </div>
 <h2>National Strategy: <span class="weight-300" id="international-label"></span></h2>
 <div class="axis">
-    <img id="img-international" src="value_images/international.png" height="100pt"/>
+    <img id="img-international" src="value_images/international.png" height="70pt"/>
     <div class="bar international" id="bar-international"><div class="text-wrapper" id="international"></div></div>
     <div class="bar national" id="bar-national"><div class="text-wrapper" id="national"></div></div>
-    <img id="img-national" src="value_images/national.png" height="100pt"/>
+    <img id="img-national" src="value_images/national.png" height="70pt"/>
 </div>
 <h2>Lessons of October: <span class="weight-300" id="bolshevik-label"></span></h2>
 <div class="axis">
-    <img id="img-menshevik" src="value_images/menshevik.png" height="100pt"/>
+    <img id="img-menshevik" src="value_images/menshevik.png" height="70pt"/>
     <div class="bar menshevik" id="bar-menshevik"><div class="text-wrapper" id="menshevik"></div></div>
     <div class="bar bolshevik" id="bar-bolshevik"><div class="text-wrapper" id="bolshevik"></div></div>
-    <img id="img-bolshevik" src="value_images/bolshevik.png" height="100pt"/>
+    <img id="img-bolshevik" src="value_images/bolshevik.png" height="70pt"/>
 </div>
 <h2>Post-Revolutionary Direction: <span class="weight-300" id="left-com-label"></span></h2>
 <div class="axis">
-    <img id="img-left-com" src="value_images/left-com.png" height="100pt"/>
+    <img id="img-left-com" src="value_images/left-com.png" height="70pt"/>
     <div class="bar left-com" id="bar-left-com"><div class="text-wrapper" id="left-com"></div></div>
     <div class="bar right-com" id="bar-right-com"><div class="text-wrapper" id="right-com"></div></div>
-    <img id="img-right-com" src="value_images/right-com.png" height="100pt"/>
+    <img id="img-right-com" src="value_images/right-com.png" height="70pt"/>
 </div>
 <h2>Revolutionary Heirs: <span class="weight-300" id="stalin-label"></span></h2>
 <div class="axis">
-    <img id="img-stalin" src="value_images/stalin.png" height="100pt"/>
+    <img id="img-stalin" src="value_images/stalin.png" height="70pt"/>
     <div class="bar stalin" id="bar-stalin"><div class="text-wrapper" id="stalin"></div></div>
     <div class="bar trotsky" id="bar-trotsky"><div class="text-wrapper" id="trotsky"></div></div>
-    <img id="img-trotsky" src="value_images/trotsky.png" height="100pt"/>
+    <img id="img-trotsky" src="value_images/trotsky.png" height="70pt"/>
 </div>
 <h2>Soviet Bloc: <span class="weight-300" id="pro-soviet-label"></span></h2>
 <div class="axis">
-    <img id="img-pro-soviet" src="value_images/pro-soviet.png" height="100pt"/>
+    <img id="img-pro-soviet" src="value_images/pro-soviet.png" height="70pt"/>
     <div class="bar pro-soviet" id="bar-pro-soviet"><div class="text-wrapper" id="pro-soviet"></div></div>
     <div class="bar anti-soviet" id="bar-anti-soviet"><div class="text-wrapper" id="anti-soviet"></div></div>
-    <img id="img-anti-soviet" src="value_images/anti-soviet.png" height="100pt"/>
+    <img id="img-anti-soviet" src="value_images/anti-soviet.png" height="70pt"/>
 </div>
 <h2>Left Unity: <span class="weight-300" id="cooperating-label"></span></h2>
 <div class="axis">
-    <img id="img-cooperating" src="value_images/cooperating.png" height="100pt"/>
+    <img id="img-cooperating" src="value_images/cooperating.png" height="70pt"/>
     <div class="bar cooperating" id="bar-cooperating"><div class="text-wrapper" id="cooperating"></div></div>
     <div class="bar splitting" id="bar-splitting"><div class="text-wrapper" id="splitting"></div></div>
-    <img id="img-splitting" src="value_images/splitting.png" height="100pt"/>
+    <img id="img-splitting" src="value_images/splitting.png" height="70pt"/>
 </div>
 <h2>The Ends: <span class="weight-300" id="radical-ends-label"></span></h2>
 <div class="axis">
-    <img id="img-radical-ends" src="value_images/radical-ends.png" height="100pt"/>
+    <img id="img-radical-ends" src="value_images/radical-ends.png" height="70pt"/>
     <div class="bar radical-ends" id="bar-radical-ends"><div class="text-wrapper" id="radical-ends"></div></div>
     <div class="bar moderate-ends" id="bar-moderate-ends"><div class="text-wrapper" id="moderate-ends"></div></div>
-    <img id="img-moderate-ends" src="value_images/moderate-ends.png" height="100pt"/>
+    <img id="img-moderate-ends" src="value_images/moderate-ends.png" height="70pt"/>
 </div>
 
-<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
-<p>You can send these results by copying and pasting the URL at the top of the page or using the image below. </p>
-<hr/>
-<img src="" id="banner">
 <button class="button" onclick="location.href='index.html';">Back</button> <br>
 <script>
     function getQueryVariable(variable)
@@ -347,8 +349,9 @@
         ctx.fillStyle="#222222"
         ctx.font="700 30px Montserrat"
         ctx.textAlign="left"
-        ctx.fillText("Socialist History Test", 20, 90)
+        ctx.fillText("Socialist History Values Test", 20, 100)
         ctx.font="20px Montserrat"
+        ctx.fillText("sochisttest.github.io", 20, 65)
         ctx.fillText("Closest match: "+ideology, 20, 140)
 
         ctx.textAlign="left"

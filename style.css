@@ -60,17 +60,17 @@ p.question {
 h1 {
     color: #222222;
     font-family: 'Montserrat', sans-serif;
-    font-size: 48pt;
+    font-size: 36pt;
     text-align: center;
-    line-height: 48pt;
+    line-height: 36pt;
     margin-top: 0pt;
     margin-bottom: 0pt;
 }
 h2 {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24pt;
-    line-height: 24pt;
+    font-size: 20pt;
+    line-height: 20pt;
     margin-top: 12pt;
     margin-bottom: 10pt;
 }
@@ -204,7 +204,7 @@ div.axis {
     justify-content: center;
 }
 div.bar {
-    height: 36pt;
+    height: 20pt;
     line-height: 36pt;
     padding: 8pt;
     margin-top: 4pt;
@@ -220,8 +220,8 @@ div.bar {
 }
 div.text-wrapper {
     font-family: 'Montserrat', sans-serif;
-    font-size: 36pt;
-    line-height: 36pt;
+    font-size: 24pt;
+    line-height: 24pt;
     color: #222222;
     display: inline-block;
 }
