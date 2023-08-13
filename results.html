@@ -263,7 +263,7 @@
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.ussr - pro_soviet), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.prol - proletarian), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.stat - state_dependent), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.stat - state_dependent), 3)
         dist += Math.pow(Math.abs(ideologies[i].stats.econ - economistic), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.prty - pro_party), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.intl - international), 2)
@@ -272,7 +272,7 @@
         dist += Math.pow(Math.abs(ideologies[i].stats.lcom - left_com), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.stal - stalin), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.radc - radical_ends), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.neut - neutrals), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.neut - neutrals), 1)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             example = ideologies[i].orgs

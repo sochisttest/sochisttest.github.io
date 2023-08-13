@@ -83,9 +83,9 @@
         impr_array[qn] = mult*questions[qn].effect.impr
         radc_array[qn] = mult*questions[qn].effect.radc
         if (Math.abs(mult) < 0.1) {
-            neut_array[qn] = 1;
+            neut_array[qn] = 1.;
         } else {
-            neut_array[qn] = 0;
+            neut_array[qn] = 0.;
         }
         qn++;
         if (qn < questions.length) {
@@ -132,7 +132,7 @@
             + `&l=${calc_score(final_lcom,max_lcom)}`
             + `&s=${calc_score(final_stal,max_stal)}`
             + `&r=${calc_score(final_radc,max_radc)}`
-            + `&n=${calc_score(final_neut,max_neut)}`
+            + `&n=${final_neut/max_neut}`
     }
 </script>
 </body>
