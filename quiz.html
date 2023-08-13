@@ -24,8 +24,8 @@
 
 <!-- JavaScript for the test itself -->
 <script>
-    var max_ussr, max_prol, max_stat, max_econ, max_prty, max_intl, max_coop, max_bols, max_lcom, max_stal, max_impr, max_radc;
-    max_ussr = max_prol = max_stat = max_econ = max_prty = max_intl = max_coop = max_bols = max_lcom = max_stal = max_impr = max_radc = 0;
+    var max_ussr, max_prol, max_stat, max_econ, max_prty, max_intl, max_coop, max_bols, max_lcom, max_stal, max_impr, max_radc, max_neut;
+    max_ussr = max_prol = max_stat = max_econ = max_prty = max_intl = max_coop = max_bols = max_lcom = max_stal = max_impr = max_radc = max_neut = 0;
     let ussr_array = new Array(questions.length);
     let prol_array = new Array(questions.length);
     let stat_array = new Array(questions.length);
@@ -38,6 +38,7 @@
     let stal_array = new Array(questions.length);
     let impr_array = new Array(questions.length);
     let radc_array = new Array(questions.length);
+    let neut_array = new Array(questions.length);
     var qn = 0; // Question number
     init_question();
     for (var i = 0; i < questions.length; i++) {
@@ -53,6 +54,7 @@
         max_stal += Math.abs(questions[i].effect.stal)
         max_impr += Math.abs(questions[i].effect.impr)
         max_radc += Math.abs(questions[i].effect.radc)
+        max_neut = questions.length
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -80,6 +82,11 @@
         stal_array[qn] = mult*questions[qn].effect.stal
         impr_array[qn] = mult*questions[qn].effect.impr
         radc_array[qn] = mult*questions[qn].effect.radc
+        if (Math.abs(mult) < 0.1) {
+            neut_array[qn] = 1;
+        } else {
+            neut_array[qn] = 0;
+        }
         qn++;
         if (qn < questions.length) {
             init_question();
@@ -112,6 +119,7 @@
         let final_lcom = lcom_array.reduce((a, b) => a + b, 0)
         let final_stal = stal_array.reduce((a, b) => a + b, 0)
         let final_radc = radc_array.reduce((a, b) => a + b, 0)
+        let final_neut = neut_array.reduce((a, b) => a + b, 0)
         location.href = `results.html`
             + `?u=${calc_score(final_ussr,max_ussr)}`
             + `&p=${calc_score(final_prol,max_prol)}`
@@ -124,6 +132,7 @@
             + `&l=${calc_score(final_lcom,max_lcom)}`
             + `&s=${calc_score(final_stal,max_stal)}`
             + `&r=${calc_score(final_radc,max_radc)}`
+            + `&n=${calc_score(final_neut,max_neut)}`
     }
 </script>
 </body>

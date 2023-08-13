@@ -6,7 +6,7 @@
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
 <script>
-  version = "v1.3" //Remember to update this before making changes to the test itself!
+  version = "v1.4" //Remember to update this before making changes to the test itself!
 </script>
 </head>
 <script type="application/javascript"
@@ -20,6 +20,7 @@
 <h1>Results</h1>
 
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
+<h2><span class="weight-300" id="ideology-example"></span></h2>
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
 <p>Details about each category can be found below the image.</p>
 <h2>If you don't like your results:</h2>
@@ -207,6 +208,7 @@
     left_com = getQueryVariable("l")
     stalin = getQueryVariable("s")
     radical_ends = getQueryVariable("r")
+    neutrals = getQueryVariable("n")
     anti_soviet = (100 - pro_soviet).toFixed(1)
     populist = (100 - proletarian).toFixed(1)
     state_independent = (100 - state_dependent).toFixed(1)
@@ -255,6 +257,7 @@
     setBarValue("moderate-ends", moderate_ends)
 
     ideology = ""
+    example = ""
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
@@ -269,12 +272,18 @@
         dist += Math.pow(Math.abs(ideologies[i].stats.lcom - left_com), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.stal - stalin), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.radc - radical_ends), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.neut - neutrals), 2)
         if (dist < ideodist) {
             ideology = ideologies[i].name
+            example = ideologies[i].orgs
             ideodist = dist
         }
     }
+    if (example != "") {
+        example = "Example(s): " + example
+    }
     document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("ideology-example").innerHTML = example
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
