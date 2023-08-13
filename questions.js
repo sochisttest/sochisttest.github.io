@@ -189,7 +189,7 @@ questions = [
         }
     },
     {
-        "question": "Karl Kautsky was correct to try to build a party to represent the whole proletariat.",
+        "question": "In the 19th century, Karl Kautsky was correct to try to build a party to represent the whole proletariat.",
         "effect": {
             "ussr": 0,
             "prol": 5,
@@ -665,6 +665,23 @@ questions = [
         }
     },
     {
+        "question": "Under ideal conditions, the Bolsheviks would have introduced multiparty socialist democracy after winning the revolution.",
+        "effect": {
+            "ussr": 0,
+            "prol": 0,
+            "stat": -5,
+            "econ": 0,
+            "prty": -5,
+            "intl": 0,
+            "coop": 0,
+            "bols": 0,
+            "lcom": 5,
+            "stal": -5,
+            "impr": 0,
+            "radc": 0,
+        }
+    },
+    {
         "question": "Avant-garde art, such as constructivism, was a petty-bourgeois distraction and had no place in the Soviet Union.",
         "effect": {
             "ussr": 0,
@@ -744,7 +761,7 @@ questions = [
             "coop": 0,
             "bols": 0,
             "lcom": 5,
-            "stal": 10,
+            "stal": 5,
             "impr": 0,
             "radc": 0,
         }
@@ -906,7 +923,7 @@ questions = [
         "question": "African struggles for national liberation should always be supported as they inherently challenge the capitalist order.",
         "effect": {
             "ussr": 0,
-            "prol": 0,
+            "prol": -5,
             "stat": 0,
             "econ": 0,
             "prty": 0,
@@ -948,7 +965,7 @@ questions = [
             "coop": 0,
             "bols": 0,
             "lcom": 10,
-            "stal": 10,
+            "stal": 5,
             "impr": 0,
             "radc": 0,
         }
@@ -1026,7 +1043,7 @@ questions = [
         "question": "The New Left was misguided because they introduced cultural concerns to the exclusion of economic issues.",
         "effect": {
             "ussr": 0,
-            "prol": 0,
+            "prol": 5,
             "stat": 0,
             "econ": 10,
             "prty": 0,
@@ -1077,7 +1094,7 @@ questions = [
         "question": "The stagnation of the working class in the First World suggests that new revolutionary subjects (e.g. racial or sexual minorities) must be considered.",
         "effect": {
             "ussr": 0,
-            "prol": 0,
+            "prol": -10,
             "stat": 0,
             "econ": -10,
             "prty": -10,
@@ -1111,7 +1128,7 @@ questions = [
         "question": "African Americans form a distinct nation within the USA, and their struggle against white supremacy is revolutionary.",
         "effect": {
             "ussr": 0,
-            "prol": 0,
+            "prol": -5,
             "stat": 0,
             "econ": 0,
             "prty": 0,

@@ -34,7 +34,7 @@ ideologies = [
     {
         "name": "Anarchist Collectivism (Bakuninism)",
         "stats": {
-            "prol": 60,
+            "prol": 50,
             "stat": 0,
             "econ": 50,
             "prty": 20,
@@ -50,7 +50,7 @@ ideologies = [
     {
         "name": "Anarcho-Communism",
         "stats": {
-            "prol": 100,
+            "prol": 50,
             "stat": 0,
             "econ": 50,
             "prty": 0,
@@ -66,7 +66,7 @@ ideologies = [
     {
         "name": "Industrial Unionism (Syndicalism)",
         "stats": {
-            "prol": 100,
+            "prol": 70,
             "stat": 40,
             "econ": 100,
             "prty": 30,
@@ -82,7 +82,7 @@ ideologies = [
     {
         "name": "Anarcho-Syndicalism",
         "stats": {
-            "prol": 100,
+            "prol": 70,
             "stat": 0,
             "econ": 100,
             "prty": 30,
@@ -98,7 +98,7 @@ ideologies = [
     {
         "name": "Postcolonial Anarchism",
         "stats": {
-            "prol": 50,
+            "prol": 30,
             "stat": 0,
             "econ": 50,
             "prty": 20,
@@ -210,7 +210,7 @@ ideologies = [
     {
         "name": "Post-Trotskyist Anarchism (Taborites)",
         "stats": {
-            "prol": 100,
+            "prol": 80,
             "stat": 20,
             "econ": 20,
             "prty": 20,
@@ -242,7 +242,7 @@ ideologies = [
     {
         "name": "Marxist Humanism",
         "stats": {
-            "prol": 100,
+            "prol": 80,
             "stat": 20,
             "econ": 0,
             "prty": 50,
@@ -258,7 +258,7 @@ ideologies = [
     {
         "name": "Left-Schachtmanism (Draperites)",
         "stats": {
-            "prol": 100,
+            "prol": 90,
             "stat": 33,
             "econ": 0,
             "prty": 75,
@@ -274,7 +274,7 @@ ideologies = [
     {
         "name": "Trade Unionism",
         "stats": {
-            "prol": 80,
+            "prol": 60,
             "stat": 50,
             "econ": 100,
             "prty": 30,
@@ -322,7 +322,7 @@ ideologies = [
     {
         "name": "Contemporary Class-first Socialism",
         "stats": {
-            "prol": 90,
+            "prol": 80,
             "stat": 50,
             "econ": 60,
             "prty": 80,
@@ -354,7 +354,7 @@ ideologies = [
     {
         "name": "Marxism-Leninism (Stalinism)",
         "stats": {
-            "prol": 80,
+            "prol": 70,
             "stat": 50,
             "econ": 40,
             "prty": 100,
@@ -370,7 +370,7 @@ ideologies = [
     {
         "name": "Anti-Revisionist Marxism-Leninism (Stalinism/Hoxhaism)",
         "stats": {
-            "prol": 80,
+            "prol": 70,
             "stat": 50,
             "econ": 40,
             "prty": 100,
@@ -386,7 +386,7 @@ ideologies = [
     {
         "name": "Titoism",
         "stats": {
-            "prol": 80,
+            "prol": 70,
             "stat": 50,
             "econ": 40,
             "prty": 100,
@@ -450,7 +450,7 @@ ideologies = [
     {
         "name": "Right-Communism (Bukharinism)",
         "stats": {
-            "prol": 100,
+            "prol": 80,
             "stat": 33,
             "econ": 20,
             "prty": 100,
@@ -466,7 +466,7 @@ ideologies = [
     {
         "name": "Autonomist Marxism",
         "stats": {
-            "prol": 100,
+            "prol": 70,
             "stat": 25,
             "econ": 20,
             "prty": 40,
@@ -514,7 +514,7 @@ ideologies = [
     {
         "name": "Eurocommunism",
         "stats": {
-            "prol": 100,
+            "prol": 70,
             "stat": 50,
             "econ": 40,
             "prty": 80,
@@ -530,7 +530,7 @@ ideologies = [
     {
         "name": "Reformist Marxism (Bernsteinian Social Democracy)",
         "stats": {
-            "prol": 100,
+            "prol": 70,
             "stat": 60,
             "econ": 50,
             "prty": 100,
