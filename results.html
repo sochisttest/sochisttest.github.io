@@ -271,8 +271,8 @@
         dist += Math.pow(Math.abs(ideologies[i].stats.bols - bolshevik), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.lcom - left_com), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.stal - stalin), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.radc - radical_ends), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.neut - neutrals), 1)
+        dist += Math.pow(Math.abs(ideologies[i].stats.radc - radical_ends), 1.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.neut - neutrals), 1.5)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             example = ideologies[i].orgs
