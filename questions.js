@@ -223,7 +223,7 @@ questions = [
         }
     },
     {
-        "question": "The workers of the Second International faced different difficulties in their respective countries, and should have autonomy to determine their own strategies.",
+        "question": "The workers of the Second International faced different difficulties in their respective countries, and should have had the autonomy to determine their own strategies.",
         "effect": {
             "ussr": 0,
             "prol": 0,
@@ -257,7 +257,7 @@ questions = [
         }
     },
     {
-        "question": "The parties of the Second International should have sought to enter ministerial positions in government.",
+        "question": "The parties of the Second International should have sought to enter ministerial positions in government, beyond parliamentary participation.",
         "effect": {
             "ussr": 0,
             "prol": 0,
@@ -869,7 +869,7 @@ questions = [
         }
     },
     {
-        "question": "Stalin's rise to power was a consequence of political opportunism broadly common to the Second International.",
+        "question": "Stalin's rise to power was a consequence of political opportunism common to the right wing of the Second International.",
         "effect": {
             "ussr": 0,
             "prol": 0,
