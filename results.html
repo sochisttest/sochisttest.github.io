@@ -270,7 +270,7 @@
         dist += Math.pow(Math.abs(ideologies[i].stats.econ - economistic), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.prty - pro_party), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.intl - international), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.coop - cooperating), 1)
+        dist += Math.pow(Math.abs(ideologies[i].stats.coop - cooperating), 1.5)
         dist += Math.pow(Math.abs(ideologies[i].stats.bols - bolshevik), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.lcom - left_com), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.stal - stalin), 2)
@@ -281,6 +281,7 @@
             example = ideologies[i].orgs
             ideodist = dist
         }
+        console.info(ideologies[i].name + ": " + dist)
     }
     if (example != "") {
         example = "Example(s): " + example
