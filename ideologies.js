@@ -364,7 +364,7 @@ ideologies = [
         "orgs": "Democratic Socialists of America",
         "stats": {
             "neut": 100,
-            "prol": 50,
+            "prol": 40,
             "stat": 70,
             "econ": 30,
             "prty": 60,
@@ -419,7 +419,7 @@ ideologies = [
         "stats": {
             "neut": 0,
             "prol": 70,
-            "stat": 50,
+            "stat": 60,
             "econ": 40,
             "prty": 100,
             "intl": 50,
@@ -437,7 +437,7 @@ ideologies = [
         "stats": {
             "neut": 0,
             "prol": 70,
-            "stat": 50,
+            "stat": 60,
             "econ": 40,
             "prty": 100,
             "intl": 50,
@@ -455,7 +455,7 @@ ideologies = [
         "stats": {
             "neut": 0,
             "prol": 70,
-            "stat": 50,
+            "stat": 60,
             "econ": 40,
             "prty": 90,
             "intl": 30,
@@ -473,7 +473,7 @@ ideologies = [
         "stats": {
             "neut": 0,
             "prol": 40,
-            "stat": 50,
+            "stat": 60,
             "econ": 40,
             "prty": 80,
             "intl": 20,
@@ -491,14 +491,14 @@ ideologies = [
         "stats": {
             "neut": 0,
             "prol": 40,
-            "stat": 50,
+            "stat": 60,
             "econ": 40,
             "prty": 70,
             "intl": 30,
             "bols": 90,
             "lcom": 70,
             "stal": 70,
-            "ussr": 50,
+            "ussr": 40,
             "coop": 40,
             "radc": 70,
         }
@@ -509,7 +509,7 @@ ideologies = [
         "stats": {
             "neut": 0,
             "prol": 50,
-            "stat": 60,
+            "stat": 70,
             "econ": 40,
             "prty": 80,
             "intl": 10,
